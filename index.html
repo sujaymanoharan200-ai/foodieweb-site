@@ -123,14 +123,15 @@
                 </div>
                 <button type="submit">Login
                     
-                </button><br><br>
+                </button><br><br><br>
+                <div id="message" class="message"></div><br><br><br>
                 <center>
                     <button class="one">
                <a href="page 1.html">Go to next page</a>
             </button>    
             </center>
             </form>
-            <div id="message" class="message"></div>
+            
         </div>
     </div>
     </center>
@@ -159,7 +160,7 @@
             })
             .then(result => {
                 if (result.status === 'success') {
-                    document.getElementById('message').innerHTML = '<p style="color: green;">Login successful!</p>';
+                    document.getElementById('message').innerHTML = '<p style="color: green;background-color:white; font-size:25px; "><b>Login successful!</b></p>';
                 }
                 // Only notify success status, ignore others
             })
